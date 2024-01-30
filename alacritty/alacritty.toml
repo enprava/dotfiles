@@ -1,0 +1,25 @@
+[font]
+size = 18.0
+
+[font.bold]
+family = "Single Day"
+style = "Bold"
+
+[font.bold_italic]
+family = "Single Day"
+style = "Bold Italic"
+
+[font.italic]
+family = "Single Day"
+style = "Italic"
+
+[font.normal]
+family = "Single Day"
+style = "Regular"
+
+[cursor.style]
+shape = "Underline"
+blinking = "On"
+
+[colors.primary]
+background = "#130909"

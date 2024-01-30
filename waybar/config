@@ -1,0 +1,72 @@
+{
+  "layer": "top",
+    "output": "eDP-1",
+    "modules-left": ["hyprland/workspaces", "custom/layout"],
+    "modules-center": ["clock"],
+    "modules-right": ["temperature","backlight", "pulseaudio", "network", "battery",  "custom/notifications"],
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "tofi-drun | xargs hyprctl dispatch exec --"
+    },
+    "hyprland/workspaces": {
+      //"format": "{name}",
+      "format": "{icon}",
+      "tooltip": false,
+      "all-outputs": true,
+      "format-icons": {
+        "active": "",
+        "default": ""
+      }
+    },
+    "custom/layout":{
+      "exec":"hyprctl devices -j | jq -r '.keyboards[] | .active_keymap' | head -n1 | cut -c1-2 | tr 'a-z' 'A-Z'",
+      "on-click":"/home/prada/.config/waybar/switch.sh",
+      "signal" : 1
+    },   
+    "clock": {
+      "format": " {:%H:%M}",
+    },
+    "backlight": {
+      "device": "intel_backlight",
+      "format": " {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": " {volume}%",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "", "", "", "", "", ""]
+      },
+      "scroll-step": 1,
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+      //  "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "battery": {
+      "format": "<span color='#feb4b4'>{icon}</span> {capacity}%",
+      "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+      "format-charging": "<span color='#feb4b4'></span> {capacity}%",
+      "tooltip": false,
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "custom/notifications": {
+      "format": "<span></span>",
+      "on-click": "/usr/bin/swaync-client -t"
+    }
+}
