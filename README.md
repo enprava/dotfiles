@@ -24,3 +24,8 @@ Font: Singular Day (yes sorry.)
 Theme: Material-Black-Cherry
 Icons: Material-Black-Cherry-Suru
 ```
+## Screenshots
+
+![notifications](gitimages/notifications.jpeg "")
+![vscode](gitimages/vscode.jpeg "")
+![firefox](gitimages/firefox.jpeg "")
