@@ -1,11 +1,7 @@
 #  Dotfiles
 Config files i am currently using in my hyprland setup.
 
-## Screenshots
-
-![notifications](gitimages/notifications.jpeg "")
-![vscode](gitimages/vscode.jpeg "")
-![firefox](gitimages/firefox.jpeg "")
+![image](gitimages/image.jpeg "")
 
 ## Dependencies
 ```
@@ -23,8 +19,14 @@ nwg-look
 ```
 ### Theme and font
 ```
-Font: Singular Day (yes.)
+Font: Madimi One
 Theme: Material-Black-Cherry
 Icons: Material-Black-Cherry-Suru
 ```
+
+## TODO
+
+
+-  Set up and customize rofi launcher and delete tofi
+- Do a simple installation guide
 

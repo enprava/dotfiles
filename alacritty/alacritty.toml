@@ -1,20 +1,20 @@
 [font]
-size = 18.0
+size = 11.0
 
 [font.bold]
-family = "Single Day"
+family = "Madimi One"
 style = "Bold"
 
 [font.bold_italic]
-family = "Single Day"
+family = "Madimi One"
 style = "Bold Italic"
 
 [font.italic]
-family = "Single Day"
+family = "Madimi One"
 style = "Italic"
 
 [font.normal]
-family = "Single Day"
+family = "Madimi One"
 style = "Regular"
 
 [cursor.style]
@@ -23,3 +23,7 @@ blinking = "On"
 
 [colors.primary]
 background = "#130909"
+
+[shell]
+program = "/bin/bash"
+args  = ["-c", "/bin/neofetch && exec bash"]

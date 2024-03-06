@@ -13,7 +13,7 @@
 	# characters not in the chosen font will fail to render.
 	#
 	# Otherwise, fonts are interpreted in Pango format.
-	font = "Single Day"
+	font = Madimi One
 
 	# Point size of text.
 	font-size = 24
@@ -171,16 +171,16 @@
 	height = 30%
 
 	# Window background color
-	background-color = #11111B
+	background-color = #111
 
 	# Width of the border outlines in pixels.
-	outline-width = 2
+	outline-width = 0
 
 	# Border outline color
 	outline-color = #11111B
 
 	# Width of the border in pixels.
-	border-width = 2
+	border-width = 0
 
 	# Border color
 	border-color = #700303
@@ -207,7 +207,7 @@
 #
 	# The name of the output to appear on. An empty string will use the
 	# default output chosen by the compositor.
-	output = "eDP-1"
+	#output = "eDP-1"
 
 	# Location on screen to anchor the window to.
 	#
