@@ -26,4 +26,4 @@ background = "#130909"
 
 [shell]
 program = "/bin/bash"
-args  = ["-c", "/bin/neofetch && exec bash"]
+args  = ["-c", "/bin/fastfetch && exec bash"]

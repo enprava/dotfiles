@@ -8,7 +8,7 @@ Config files i am currently using in my hyprland setup.
 hyprland
 alacritty
 tofi
-neofetch
+fastfetch
 waybar
 swaync
 thunar
