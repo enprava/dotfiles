@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Simple script to toggle between US and ES keyboard layouts
+
+current_layout=$(setxkbmap -query | grep layout | awk '{print $2}')
+
+if [ "$current_layout" == "us" ]; then
+    setxkbmap es
+    echo "Switched to Spanish (ES) layout"
+else
+    setxkbmap us
+    echo "Switched to US (US) layout"
+fi
