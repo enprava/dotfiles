@@ -3,9 +3,6 @@
 -- Add any additional options here
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.lazyvim_python_ruff = "ruff"
-vim.o.tabstop = 4
-vim.bo.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftround = true
-vim.o.shiftwidth = 4
-vim.bo.shiftwidth = 4
+vim.o.tabstop = 4    -- A TAB character looks like 4 spaces
+vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
+
