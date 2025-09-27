@@ -175,4 +175,3 @@ bindsym $mod2+space exec switch
 default_border pixel
 smart_borders on
 tiling_drag modifier titlebar
-exec xrandr --output eDP-1-1 --off
