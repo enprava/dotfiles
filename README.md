@@ -42,5 +42,5 @@ ttf-iosevka-nerd
 ```
 sudo ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
 ```
-- [Firefox based web browsers]: Set widget.use-xdg-desktop-portal.file-picker to 0 in about:config tab.
+- [Firefox based web browsers]: Set `widgeuse-xdg-desktop-portal.file-picker` to 0 in about:config tab.
 - Move files such as `.zshrc`, `.xinitrc` and `.vimrc` to `$HOME` directory.
