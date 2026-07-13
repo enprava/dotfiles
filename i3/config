@@ -1,0 +1,12 @@
+# i3 configuration
+# Read https://i3wm.org/docs/userguide.html for a complete reference.
+
+font pango:monospace 10
+
+include ~/.config/i3/colors.conf
+include ~/.config/i3/variables.conf
+include ~/.config/i3/keybindings.conf
+include ~/.config/i3/resize.conf
+include ~/.config/i3/media.conf
+include ~/.config/i3/windows.conf
+include ~/.config/i3/bar.conf

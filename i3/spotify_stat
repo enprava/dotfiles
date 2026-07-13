@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# 1. Initialize global variables at the beginning
+title=""
+artist=""
+art_url=""
+COVER_ART="/tmp/spotify_cover.png"
+
+# 2. Use process substitution <(...) instead of a pipe |
+# This prevents the while loop from running in a subshell and keeps variables alive
+while IFS='|' read -r raw_title raw_artist raw_url; do
+
+    # Assign clean values to our initialized variables
+    title="${raw_title:-}"
+    artist="${raw_artist:-Unknown Artist}"
+    art_url="${raw_url:-}"
+
+    # If the title is completely empty, no song is playing; skip to the next event
+    [ -z "$title" ] && continue
+
+    # Default icon is the system Spotify icon
+    icon_param="spotify"
+
+    # If a valid cover art URL is provided, attempt to download it
+    if [ -n "$art_url" ]; then
+        # Fast and silent download
+        curl -s "$art_url" -o "$COVER_ART"
+        
+        # If curl exits successfully (code 0), use the downloaded image
+        [ $? -eq 0 ] && icon_param="$COVER_ART"
+    fi
+
+    # Send the clean notification to Dunst
+    dunstify -r 2700 -i "$icon_param" "$title" "by <i>$artist</i>"
+
+done < <(playerctl -p spotify metadata -F --format '{{title}}|{{artist}}|{{mpris:artUrl}}' 2>/dev/null)
