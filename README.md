@@ -33,6 +33,12 @@ ly
 nvim
 zoxide
 ttf-iosevka-nerd
+noto-fonts-emoji
+catppuccin-gtk-theme-mocha
+xclip
+fzf
+ripgrep
+fd
 ```
 
 ## Setup
