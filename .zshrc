@@ -105,3 +105,4 @@ source $ZSH/oh-my-zsh.sh
 eval "$(zoxide init zsh)"
 alias cd=z
 alias vim=nvim
+alias c=clear
