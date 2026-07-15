@@ -45,6 +45,7 @@ ranger
 
 ## Setup
 
+- Install `paru`.
 - Set zsh the [default shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell).
 - Create link `/etc/ly/config.ini -> $HOME/.config/ly/config.ini`.
 ```
