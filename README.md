@@ -4,6 +4,7 @@
 
 ```
 i3wm
+network-manager-applet
 i3status-rust
 i3lock
 i3-nagbar
