@@ -40,6 +40,7 @@ xclip
 fzf
 ripgrep
 fd
+ranger
 ```
 
 ## Setup
