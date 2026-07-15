@@ -15,7 +15,8 @@ spotify
 steam
 feh
 flameshot
-xrandr
+xorg-xrandr
+autorandr
 playerctl
 brightnessctl
 pactl
@@ -27,7 +28,7 @@ zsh-completions
 pipewire
 wireplumbler
 cmatrix
-xinit
+xorg-xinit
 xorg-server
 ly
 nvim
