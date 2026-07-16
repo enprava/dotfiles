@@ -1,0 +1,24 @@
+@import "catppuccin-default"
+
+configuration {
+    show-icons: false;
+}
+
+inputbar {
+    children: [ "textbox-prompt-colon", "entry" ];
+    prompt:   " Menu";
+}
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @overlay0;
+}
+
+textbox-prompt-colon {
+    str: " ";
+}
+
+listview {
+    scrollbar: true;
+    lines:     5;
+}

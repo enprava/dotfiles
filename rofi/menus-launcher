@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ROFI_DIR="$HOME/.config/rofi"
+
+options=(
+    "Apps"
+    "Clipboard"
+    "Windows"
+    "Power"
+)
+
+selected=$(printf '%s\n' "${options[@]}" | rofi -dmenu -theme "$ROFI_DIR/menus.rasi" -p "Select")
+
+case "$selected" in
+"Apps") exec rofi -show drun ;;
+"Clipboard") exec "$ROFI_DIR/clipmenu-launcher" ;;
+"Windows") exec rofi -show window ;;
+"Power")   exec "$ROFI_DIR/power-launcher" ;;
+esac

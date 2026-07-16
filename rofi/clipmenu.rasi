@@ -1,0 +1,24 @@
+@import "catppuccin-default"
+
+configuration {
+    show-icons: false;
+    terminal:   "";
+}
+
+inputbar {
+    children: [ "textbox-prompt-colon", "entry" ];
+    prompt:   " Clipboard";
+}
+
+entry {
+    placeholder:       "Search clipboard history...";
+    placeholder-color: @overlay0;
+}
+
+textbox-prompt-colon {
+    str: " ";
+}
+
+listview {
+    scrollbar: true;
+}
