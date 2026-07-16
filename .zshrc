@@ -108,3 +108,5 @@ alias vim=nvim
 alias c=clear
 alias v=vim
 alias layout="setxkbmap -layout us -variant altgr-intl"
+
+fastfetch
