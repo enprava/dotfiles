@@ -52,7 +52,11 @@ udiskie
 
 - Install `paru`.
 - Set zsh the [default shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell).
-- Create link `/etc/ly/config.ini -> $HOME/.config/ly/config.ini`.
+- Link `$HOME/.config/.zshrc -> $HOME/.zshrc`.
+```
+ln -s /home/$USER/.config/.zshrc /home/$USER/.zshrc
+```
+- Link `/etc/ly/config.ini -> $HOME/.config/ly/config.ini`.
 ```
 sudo ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
 ```
