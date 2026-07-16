@@ -7,6 +7,7 @@ i3wm
 network-manager-applet
 i3status-rust
 i3lock
+picom
 i3-nagbar
 alacritty
 rofi
@@ -42,6 +43,7 @@ fzf
 ripgrep
 fd
 ranger
+clipmenu
 ```
 
 ## Setup
