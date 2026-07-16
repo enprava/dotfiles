@@ -106,3 +106,4 @@ eval "$(zoxide init zsh)"
 alias cd=z
 alias vim=nvim
 alias c=clear
+alias v=vim
