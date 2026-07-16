@@ -1,9 +1,9 @@
 element {
-    padding: 1px;
+    padding: 10px;
     cursor:  pointer;
-    spacing: 5px;
     border:  0;
 }
+
 
 element normal.normal {
     background-color: @normal-background;

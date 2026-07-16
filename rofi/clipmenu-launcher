@@ -2,6 +2,5 @@
 
 export CM_LAUNCHER="rofi"
 export CM_HISTLENGTH=10
-export CM_OUTPUT_CLIP=1
 
 exec clipmenu -theme "$HOME/.config/rofi/clipmenu.rasi"

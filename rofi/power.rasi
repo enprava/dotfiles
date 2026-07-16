@@ -1,7 +1,7 @@
 @import "catppuccin-default"
 
 configuration {
-    show-icons: false;
+    show-icons: true;
 }
 
 inputbar {
@@ -21,4 +21,13 @@ textbox-prompt-colon {
 listview {
     scrollbar: false;
     lines:     5;
+}
+
+element {
+    padding: 4px 8px;
+}
+
+element-icon {
+    size: 1.2em;
+    font:  "Iosevka Nerd Font 12";
 }

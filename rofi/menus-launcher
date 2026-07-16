@@ -5,15 +5,15 @@ ROFI_DIR="$HOME/.config/rofi"
 options=(
     "Apps"
     "Clipboard"
-    "Windows"
     "Power"
+    "Windows"
 )
 
 selected=$(printf '%s\n' "${options[@]}" | rofi -dmenu -theme "$ROFI_DIR/menus.rasi" -p "Select")
 
 case "$selected" in
-"Apps") exec rofi -show drun ;;
+"Apps") exec rofi -show drun -theme "$ROFI_DIR/drun.rasi" ;;
 "Clipboard") exec "$ROFI_DIR/clipmenu-launcher" ;;
+"Power") exec "$ROFI_DIR/power-launcher" ;;
 "Windows") exec rofi -show window ;;
-"Power")   exec "$ROFI_DIR/power-launcher" ;;
 esac

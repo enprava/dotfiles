@@ -3,19 +3,19 @@
 ROFI_DIR="$HOME/.config/rofi"
 
 options=(
-    " Shutdown"
-    " Reboot"
-    " Suspend"
-    " Lock"
-    " Logout"
+    "$(printf '\uf011')  Shutdown"
+    "$(printf '\uf021')  Reboot"
+    "$(printf '\uf186')  Suspend"
+    "$(printf '\uf023')  Lock"
+    "$(printf '\uf08b')  Logout"
 )
 
 selected=$(printf '%s\n' "${options[@]}" | rofi -dmenu -theme "$ROFI_DIR/power.rasi" -p "Power")
 
 case "$selected" in
-" Shutdown") exec systemctl poweroff ;;
-" Reboot") exec systemctl reboot ;;
-" Suspend") exec systemctl suspend ;;
-" Lock") exec ~/.config/i3/i3lock ;;
-" Logout") i3-msg exit ;;
+*"Shutdown"*) exec systemctl poweroff ;;
+*"Reboot"*) exec systemctl reboot ;;
+*"Suspend"*) exec systemctl suspend ;;
+*"Lock"*) exec ~/.config/i3/i3lock ;;
+*"Logout"*) exec i3-msg exit ;;
 esac
