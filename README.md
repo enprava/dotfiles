@@ -10,6 +10,7 @@ i3lock
 picom
 i3-nagbar
 alacritty
+fastfetch
 rofi
 librewolf
 discord
