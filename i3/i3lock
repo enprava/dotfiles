@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TERMINAL="alacritty --class cmatrix --config-file /home/prada/.config/alacritty/cmatrix.toml"
+CLASS="cmatrix"
+MATRIX="sleep 0.3 && cmatrix -aB -u 3" # -ab (negrita y asíncrono), -u velocidad
+
+$TERMINAL -e bash -c "${MATRIX}" &
+
+sleep 0.2
+window_id=$(xdotool search --class "${CLASS}" | sort | head -n 1)
+echo $window_id
+
+i3-msg "[id=${window_id}] focus; fullscreen enable"
+
+i3lock --nofork -c 000000
+
+i3-msg "[id=${window_id}] kill"
