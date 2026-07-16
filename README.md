@@ -43,7 +43,9 @@ fzf
 ripgrep
 fd
 ranger
+w3m
 clipmenu
+udiskie
 ```
 
 ## Setup
@@ -56,3 +58,4 @@ sudo ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
 ```
 - [Firefox based web browsers]: Set `widgeuse-xdg-desktop-portal.file-picker` to 0 in about:config tab.
 - Move files such as `.zshrc`, `.xinitrc` and `.vimrc` to `$HOME` directory.
+- Install [ranger-zoxide](https://github.com/jchook/ranger-zoxide) plugin
