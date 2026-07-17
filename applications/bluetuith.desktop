@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Bluetuith manager
+Comment=Bluetooth manager
+Exec=bluetuith
+Icon=bluetooth
+Terminal=true
+Categories=System;Settings;

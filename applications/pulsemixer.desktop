@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PulseMixer manager
+Comment=Audio manager
+Exec=pulsemixer
+Icon=audio-volume-high
+Terminal=true
+Categories=AudioVideo;Audio;
