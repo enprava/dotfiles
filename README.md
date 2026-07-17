@@ -39,6 +39,8 @@ zoxide
 ttf-iosevka-nerd
 noto-fonts-emoji
 catppuccin-gtk-theme-mocha
+catppuccin-cursors-mocha
+papirus-icon-theme
 xclip
 fzf
 ripgrep
