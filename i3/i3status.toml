@@ -24,8 +24,20 @@ bat = ["|E|", "|_|", "|=|", "|F|"]
 bat_charging = "|^| "
 
 [[block]]
+block = "net"
+device = "enp37s0"
+format = " 󰈀  ($ip)"
+missing_format = "No ethernet"
+
+#[[block]]
+#block = "net"
+#device = "wlan0"
+#format = "   IP: $ip"
+#missing_format = "No wifi"
+
+[[block]]
 block = "custom"
-command = "paru -Pw 2>/dev/null >/dev/null && echo 'Arch: News' || echo 'Tremendo'"
+command = "paru -Pw 2>/dev/null >/dev/null && echo 'Arch: News' || echo 'No new news'"
 interval = 3600
 
 [[block]]
