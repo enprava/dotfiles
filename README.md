@@ -53,9 +53,17 @@ udiskie
 
 - Install `paru`.
 - Set zsh the [default shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell).
+- Link `$HOME/.config/.xinitrc -> $HOME/.xinitrc`.
+```
+ln -s /home/$USER/.config/.xinitrc /home/$USER/.xinitrc
+```
 - Link `$HOME/.config/.zshrc -> $HOME/.zshrc`.
 ```
 ln -s /home/$USER/.config/.zshrc /home/$USER/.zshrc
+```
+- Link `$HOME/.config/.vim-> $HOME/.vimrc`.
+```
+ln -s /home/$USER/.config/.vimrc /home/$USER/.vimrc
 ```
 - Link `/etc/ly/config.ini -> $HOME/.config/ly/config.ini`.
 ```
