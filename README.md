@@ -4,7 +4,6 @@
 
 ```
 i3wm
-network-manager-applet
 i3status-rust
 i3lock
 picom
@@ -13,6 +12,7 @@ alacritty
 fastfetch
 rofi
 librewolf
+libappindicator
 discord
 spotify
 steam
@@ -47,6 +47,10 @@ ranger
 w3m
 clipmenu
 udiskie
+pulsemixer
+bluez
+bluez-utils
+bluetuith
 ```
 
 ## Setup
@@ -67,8 +71,22 @@ ln -s /home/$USER/.config/.vimrc /home/$USER/.vimrc
 ```
 - Link `/etc/ly/config.ini -> $HOME/.config/ly/config.ini`.
 ```
-sudo ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
+ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
 ```
+- Enable `ly@tty1.service` and disable `getty@tty1.service`.
+```
+systemctl enable ly@tty1
+systemctl disable getty@tty
+```
+- Edit i3/i3status.toml to comment/uncomment ethernet and/or wifi blocks.
 - [Firefox based web browsers]: Set `widgeuse-xdg-desktop-portal.file-picker` to 0 in about:config tab.
 - Move files such as `.zshrc`, `.xinitrc` and `.vimrc` to `$HOME` directory.
 - Install [ranger-zoxide](https://github.com/jchook/ranger-zoxide) plugin
+- Enable `bluetooth.service`
+```
+systemctl enable bluetooth
+```
+- Create links to .desktop files.
+```
+ln -s /home/$USER/.config/applications/* /home/$USER/.local/share/applications
+```
