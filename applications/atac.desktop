@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Atac (Arguably a Terminal API Client)
+Comment=Terminal API Client
+Exec=atac
+Icon=network-server
+Terminal=true
+Categories=Network;System;
