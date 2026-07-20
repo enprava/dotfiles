@@ -83,6 +83,10 @@ systemctl disable getty@tty
 - Edit i3/i3status.toml to comment/uncomment ethernet and/or wifi blocks.
 - [Firefox based web browsers]: Set `widgeuse-xdg-desktop-portal.file-picker` to 0 in about:config tab.
 - Move files such as `.zshrc`, `.xinitrc` and `.vimrc` to `$HOME` directory.
+- Install `zsh-autosuggestions` plugin.
+ ```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 - Install [ranger-zoxide](https://github.com/jchook/ranger-zoxide) plugin
 - Enable `bluetooth.service`
 ```
@@ -92,3 +96,4 @@ systemctl enable bluetooth
 ```
 ln -s /home/$USER/.config/applications/* /home/$USER/.local/share/applications
 ```
+
