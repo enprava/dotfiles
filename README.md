@@ -59,6 +59,10 @@ bluetuith
 
 - Install `paru`.
 - Set zsh the [default shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell).
+- Install `oh-my-zsh`.
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 - Link `$HOME/.config/.xinitrc -> $HOME/.xinitrc`.
 ```
 ln -s /home/$USER/.config/.xinitrc /home/$USER/.xinitrc
@@ -83,11 +87,15 @@ systemctl disable getty@tty
 - Edit i3/i3status.toml to comment/uncomment ethernet and/or wifi blocks.
 - [Firefox based web browsers]: Set `widgeuse-xdg-desktop-portal.file-picker` to 0 in about:config tab.
 - Move files such as `.zshrc`, `.xinitrc` and `.vimrc` to `$HOME` directory.
-- Install `zsh-autosuggestions` plugin.
+- Install `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins.
  ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 - Install [ranger-zoxide](https://github.com/jchook/ranger-zoxide) plugin
+```
+git clone https://github.com/jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
+```
 - Enable `bluetooth.service`
 ```
 systemctl enable bluetooth
