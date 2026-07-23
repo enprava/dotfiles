@@ -1,9 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Network manager
-Comment=Network manager
+Name=NetworkManager TUI
+Comment=NetworkManager TUI
 Exec=nmtui
 Icon=network-wireless
 Terminal=true
 Categories=Network;System;
+Keywords=Network;Manager;NetworkManager;TUI;Wifi;Ethernet

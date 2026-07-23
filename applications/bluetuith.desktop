@@ -1,9 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Bluetuith manager
-Comment=Bluetooth manager
+Name=Bluetuith
+Comment=Bluetooth
 Exec=bluetuith
 Icon=bluetooth
 Terminal=true
 Categories=System;Settings;
+Keywords=Bluetooth;Blueman;Wireless;Manager;TUI;Headset

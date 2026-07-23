@@ -1,9 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=PulseMixer manager
-Comment=Audio manager
+Name=PulseMixer
+Comment=Audio mixer
 Exec=pulsemixer
 Icon=audio-volume-high
 Terminal=true
 Categories=AudioVideo;Audio;
+Keywords=Sound;Headset;Volume;TUI;Microphone;Audio;Manager;Mixer;Voice

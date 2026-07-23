@@ -7,3 +7,4 @@ Exec=atac
 Icon=network-server
 Terminal=true
 Categories=Network;System;
+Keywords=API;Manager;HTTP;Postman;Bruno;TUI;Rest
