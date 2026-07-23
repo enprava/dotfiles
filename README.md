@@ -53,6 +53,7 @@ pulsemixer
 bluez
 bluez-utils
 bluetuith
+perl-file-mimeinfo
 ```
 
 ## Setup
@@ -70,6 +71,10 @@ ln -s /home/$USER/.config/.xinitrc /home/$USER/.xinitrc
 - Link `$HOME/.config/.zshrc -> $HOME/.zshrc`.
 ```
 ln -s /home/$USER/.config/.zshrc /home/$USER/.zshrc
+```
+- Link `$HOME/.config/.zshenv -> $HOME/.zshenv`.
+```
+ln -s /home/$USER/.config/.zshenv /home/$USER/.zshenv
 ```
 - Link `$HOME/.config/.vim-> $HOME/.vimrc`.
 ```
