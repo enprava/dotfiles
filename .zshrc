@@ -99,9 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(zoxide init zsh)"
 alias cd=z
-alias vim=nvim
 alias c=clear
-alias v=vim
+alias v=nvim
 alias layout="setxkbmap -layout us -variant altgr-intl"
 
 fastfetch
