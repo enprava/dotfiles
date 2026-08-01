@@ -35,6 +35,7 @@ xorg-xinit
 xorg-server
 ly
 nvim
+vim
 zoxide
 ttf-iosevka-nerd
 noto-fonts-emoji
@@ -59,6 +60,8 @@ perl-file-mimeinfo
 ## Setup
 
 - Install `paru`.
+- Install dependencies (listed before)
+- Install nvim dependencies.
 - Set zsh the [default shell](https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell).
 - Install `oh-my-zsh`.
 ```
