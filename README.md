@@ -55,6 +55,7 @@ bluez
 bluez-utils
 bluetuith
 perl-file-mimeinfo
+jq
 ```
 
 ## Setup
