@@ -1,2 +1,12 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+vim.g.startup_start = vim.uv.hrtime()
+
+require("options")
+require("keymaps")
+require("autocmds")
+require("plugins")
+require("lsp")
+require("blink")
+require("treesitter")
+require("fzf")
+require("autopairs")
+require("startup")
