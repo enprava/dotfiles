@@ -1,0 +1,5 @@
+@import "catppuccin-default"
+
+element {
+    padding: 13px;
+}

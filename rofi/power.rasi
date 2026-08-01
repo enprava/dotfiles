@@ -5,17 +5,7 @@ configuration {
 }
 
 inputbar {
-    children: [ "textbox-prompt-colon", "entry" ];
-    prompt:   " Power";
-}
-
-entry {
-    placeholder:       "Search...";
-    placeholder-color: @overlay0;
-}
-
-textbox-prompt-colon {
-    str: " ";
+    enabled: false;
 }
 
 listview {
@@ -24,7 +14,7 @@ listview {
 }
 
 element {
-    padding: 4px 8px;
+    padding: 10px 0px;
 }
 
 element-icon {

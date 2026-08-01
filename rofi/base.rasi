@@ -80,10 +80,8 @@ textbox {
 listview {
     padding:      2px 0px 0px;
     scrollbar:    true;
-    border-color: @separatorcolor;
     spacing:      2px;
     fixed-height: 0;
-    border:       2px dash 0px 0px;
 }
 
 scrollbar {
@@ -127,7 +125,7 @@ textbox-num-sep {
 }
 
 inputbar {
-    padding:    1px;
+    padding:    10px;
     spacing:    0px;
     text-color: @normal-foreground;
     children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];

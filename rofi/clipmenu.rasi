@@ -22,3 +22,7 @@ textbox-prompt-colon {
 listview {
     scrollbar: true;
 }
+
+element {
+    padding: 13px;
+}
