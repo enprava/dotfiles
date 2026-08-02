@@ -74,3 +74,19 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.treesitter.start()
   end,
 })
+
+-- Lsp keybinds
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local bufnr = args.buf
+    local opts = { buffer = bufnr, silent = true }
+
+    vim.keymap.set('n', '<leader>de', vim.diagnostic.open_float, opts)
+    vim.keymap.set('n', '<leader>dq', vim.diagnostic.setqflist, opts)
+    vim.keymap.set('n', '<leader>d[', vim.diagnostic.goto_prev, opts)
+    vim.keymap.set('n', '<leader>d]', vim.diagnostic.goto_next, opts)
+  end,
+})
+vim.lsp.config("*", {
+  capabilities = require("blink.cmp").get_lsp_capabilities(),
+})

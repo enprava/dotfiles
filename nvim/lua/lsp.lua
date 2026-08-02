@@ -1,7 +1,3 @@
-vim.lsp.config("*", {
-  capabilities = require("blink.cmp").get_lsp_capabilities(),
-})
-
 vim.lsp.config("lua_ls", {
   settings = {
     Lua = {
@@ -14,3 +10,8 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.lsp.enable("lua_ls")
+vim.lsp.enable("rust_analyzer")
+
+
+
+
