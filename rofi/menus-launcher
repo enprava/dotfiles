@@ -6,6 +6,7 @@ options=(
     "Apps"
     "Clipboard"
     "Power"
+    "Run"
     "Windows"
 )
 
@@ -13,6 +14,7 @@ selected=$(printf '%s\n' "${options[@]}" | rofi -dmenu -theme "$ROFI_DIR/menus.r
 
 case "$selected" in
 "Apps") exec rofi -show drun -theme "$ROFI_DIR/drun.rasi" ;;
+"Run") exec rofi -show run -theme "$ROFI_DIR/run.rasi" ;;
 "Clipboard") exec "$ROFI_DIR/clipmenu-launcher" ;;
 "Power") exec "$ROFI_DIR/power-launcher" ;;
 "Windows") exec rofi -show window -theme "$ROFI_DIR/window.rasi" ;;

@@ -1,0 +1,43 @@
+@import "catppuccin-default"
+
+configuration {
+    show-icons: true;
+}
+
+inputbar {
+    children: [ "textbox-prompt-colon", "entry" ];
+    prompt:   " Run";
+}
+
+entry {
+    placeholder:       "Type a command...";
+    placeholder-color: @overlay0;
+}
+
+textbox-prompt-colon {
+    str: " ";
+}
+
+listview {
+    columns:       1;
+    fixed-height:  true;
+    lines:         10;
+    scrollbar:     true;
+    spacing:       0px;
+}
+
+element {
+    padding:     6px 8px;
+    orientation: horizontal;
+}
+
+element-icon {
+    size:   2em;
+    cursor: inherit;
+}
+
+element-text {
+    expand:         true;
+    cursor:         inherit;
+    vertical-align: 0.5;
+}
