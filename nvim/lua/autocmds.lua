@@ -16,12 +16,13 @@ vim.api.nvim_create_autocmd("FileType", {
     end,
 })
 
--- Open files with "l" in netrw
+-- Open files with "h" or "l" in netrw
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "netrw",
-    desc = "Open file with l",
+    desc = "Open file with h or l",
     callback = function()
         vim.keymap.set("n", "l", "<CR>", { buffer = true, remap = true })
+        vim.keymap.set("n", "h", "<CR>", { buffer = true, remap = true })
     end,
 })
 

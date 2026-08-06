@@ -17,8 +17,10 @@ map("n", "<leader>j", "<C-w>j", { desc = "Focus down" })
 map("n", "<leader>k", "<C-w>k", { desc = "Focus up" })
 
 -- Window splitting
-map("n", "<leader>v", "<C-w>v", { desc = "Split vertically" })
-map("n", "<leader>tv", "<C-w>H", { desc = "Make split vertical" })
+map("n", "<leader>V", "<C-w>v", { desc = "Split vertically" })
+map("n", "<leader>tV", "<C-w>H", { desc = "Make split vertical" })
+map("n", "<leader>H", "<C-w>s", { desc = "Split horizontally" })
+map("n", "<leader>tH", "<C-w>K", { desc = "Make split horizontal" })
 
 -- LSP
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
