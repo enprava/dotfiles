@@ -56,6 +56,7 @@ bluez-utils
 bluetuith
 perl-file-mimeinfo
 jq
+difftastic
 ```
 
 ## Setup
