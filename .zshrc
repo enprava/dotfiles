@@ -102,6 +102,27 @@ alias cd=z
 alias c=clear
 alias v=nvim
 alias layout="setxkbmap -layout us -variant altgr-intl"
+# Diffstatic and git integration
+git() {
+    case "$1" in
+        diff)
+            shift
+            command git -c diff.external=difft diff "$@"
+            ;;
+        show)
+            shift
+            command git -c diff.external=difft show --ext-diff "$@"
+            ;;
+        log)
+            shift
+            command git -c diff.external=difft log --ext-diff "$@"
+            ;;
+        *)
+            command git "$@"
+            ;;
+    esac
+}
+
 export PATH="$HOME/.bun/bin:$PATH"
 
 fastfetch
