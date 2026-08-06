@@ -89,6 +89,10 @@ ln -s /home/$USER/.config/.vimrc /home/$USER/.vimrc
 ```
 ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
 ```
+- Copy .gitconfig.example to $HOME
+```
+cp /home/$USER/.config/.gitconfig.example /home/$USER/.gitconfig
+```
 - Enable `ly@tty1.service` and disable `getty@tty1.service`.
 ```
 systemctl enable ly@tty1
