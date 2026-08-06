@@ -1,0 +1,68 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "bailian-token-plan-personal": {
+      "type": "openai",
+      "name": "QwenCloud",
+      "options": {
+        "baseURL": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "",
+        "cacheControl": true
+      },
+      "models": {
+        "qwen3.8-max": {
+          "name": "qwen3.8-max",
+          "contextWindow": 983616,
+          "maxOutputTokens": 131072,
+          "options": {
+            "temperature": 0.7
+          }
+        },
+        "qwen3.8-max-preview": {
+          "name": "qwen3.8-max-preview",
+          "contextWindow": 983616,
+          "maxOutputTokens": 131072,
+          "options": {
+            "temperature": 0.6
+          }
+        },
+        "qwen3.7-max": {
+          "name": "qwen3.7-max",
+          "options": {
+            "temperature": 0.7
+          }
+        },
+        "qwen3.7-plus": {
+          "name": "qwen3.7-plus",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "options": {
+            "temperature": 0.7
+          }
+        },
+        "qwen3.6-plus": {
+          "name": "qwen3.6-plus",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "options": {
+            "temperature": 0.7
+          }
+        },
+        "qwen3.6-flash": {
+          "name": "qwen3.6-flash",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "options": {
+            "temperature": 0.7
+          }
+        }
+      }
+    }
+  }
+}
