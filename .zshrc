@@ -102,5 +102,6 @@ alias cd=z
 alias c=clear
 alias v=nvim
 alias layout="setxkbmap -layout us -variant altgr-intl"
+export PATH="$HOME/.bun/bin:$PATH"
 
 fastfetch
