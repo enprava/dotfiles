@@ -26,3 +26,6 @@ vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 vim.g.netrw_browse_split = 0
 vim.g.netrw_winsize = 25
+
+-- Replace :cd for :Z
+vim.cmd([[cnoreabbrev <expr> cd (getcmdtype() == ':' && getcmdline() ==# 'cd') ? 'Z' : 'cd']])
