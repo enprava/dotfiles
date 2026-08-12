@@ -118,3 +118,7 @@ systemctl enable bluetooth
 ```
 ln -s $HOME/.config/applications/* $HOME/.local/share/applications
 ```
+- Enable custom service "stand-up".
+```
+systemctl --user enable --now stand-up.timer
+```

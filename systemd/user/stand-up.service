@@ -1,0 +1,6 @@
+[Unit]
+Description=Standing up notification
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notify-send -u critical -i appointment-reminder "Time for a little rest" "Stand up and go for a walk"   
