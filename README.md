@@ -71,27 +71,27 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 - Link `$HOME/.config/.xinitrc -> $HOME/.xinitrc`.
 ```
-ln -s /home/$USER/.config/.xinitrc /home/$USER/.xinitrc
+ln -s $HOME/.config/.xinitrc $HOME/.xinitrc
 ```
 - Link `$HOME/.config/.zshrc -> $HOME/.zshrc`.
 ```
-ln -s /home/$USER/.config/.zshrc /home/$USER/.zshrc
+ln -s $HOME/.config/.zshrc $HOME/.zshrc
 ```
 - Link `$HOME/.config/.zshenv -> $HOME/.zshenv`.
 ```
-ln -s /home/$USER/.config/.zshenv /home/$USER/.zshenv
+ln -s $HOME/.config/.zshenv $HOME/.zshenv
 ```
 - Link `$HOME/.config/.vim-> $HOME/.vimrc`.
 ```
-ln -s /home/$USER/.config/.vimrc /home/$USER/.vimrc
+ln -s $HOME/.config/.vimrc $HOME/.vimrc
 ```
 - Link `/etc/ly/config.ini -> $HOME/.config/ly/config.ini`.
 ```
-ln -s /home/$USER/.config/ly/config.ini /etc/ly/config.ini
+ln -s $HOME/.config/ly/config.ini /etc/ly/config.ini
 ```
 - Copy .gitconfig.example to $HOME
 ```
-cp /home/$USER/.config/.gitconfig.example /home/$USER/.gitconfig
+cp $HOME/.config/.gitconfig.example $HOME/.gitconfig
 ```
 - Enable `ly@tty1.service` and disable `getty@tty1.service`.
 ```
@@ -116,6 +116,5 @@ systemctl enable bluetooth
 ```
 - Create links to .desktop files.
 ```
-ln -s /home/$USER/.config/applications/* /home/$USER/.local/share/applications
+ln -s $HOME/.config/applications/* $HOME/.local/share/applications
 ```
-
