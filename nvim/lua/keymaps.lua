@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 local map = vim.keymap.set
 
 -- Buffer navigation
+map("n", "<leader>bN", "<cmd>enew<cr>", { desc = "New buffer" })
 map("n", "<leader>bn", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<leader>bp", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 map("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Close buffer" })
